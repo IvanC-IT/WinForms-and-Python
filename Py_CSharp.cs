@@ -11,21 +11,14 @@ using IronPython.Hosting;
 using System.Windows.Forms;
 using System.IO;
 
-
-
 namespace Py_CSharp
 {
-    public partial class MainForm : Form
+    public partial class Form1 : Form
     {
-        #region Constructors
-        /// <summary>
-        /// Initializes a new instance of the <see cref="MainForm"/> class.
-        /// </summary>
-        public MainForm()
+        public Form1()
         {
             InitializeComponent();
         }
-        #endregion
 
         #region Internal Member
         protected override void OnLoad(EventArgs e)
@@ -60,7 +53,7 @@ namespace Py_CSharp
         {
             bool optionEnabled = ((RadioButton)sender).Checked;
             txtInputScriptPath.Enabled = optionEnabled;
-            cmdBrowseScript.Enabled = optionEnabled;
+            radInputFromForm.Enabled = optionEnabled;
         }
 
         private void RadInputFromForm_CheckedChanged(object sender, EventArgs e)
@@ -220,4 +213,5 @@ namespace Py_CSharp
         }
         #endregion
     }
+
 }
