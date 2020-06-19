@@ -1,5 +1,4 @@
 ﻿/**
- * Blog Post:
  * @author: IvanC-IT
  */
 using System;
@@ -16,10 +15,6 @@ using System.IO;
 
 namespace Py_CSharp
 {
-    /// <summary>
-    /// A form that allows users to execute Python scripts from a file or from
-    /// entering them manually on the form.
-    /// </summary>
     public partial class MainForm : Form
     {
         #region Constructors
@@ -32,11 +27,7 @@ namespace Py_CSharp
         }
         #endregion
 
-        #region Internal Members
-        /// <summary>
-        /// Raises the <see cref="E:System.Windows.Forms.Form.Load" /> event.
-        /// </summary>
-        /// <param name="e">An <see cref="T:System.EventArgs" /> that contains the event data.</param>
+        #region Internal Member
         protected override void OnLoad(EventArgs e)
         {
             base.OnLoad(e);
